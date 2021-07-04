@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"awesomeProject/main/types"
+	"./types"
 
 	"github.com/golang/protobuf/proto"
 )
