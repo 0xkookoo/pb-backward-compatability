@@ -1,0 +1,11 @@
+// file: request.proto
+syntax = "proto3";
+package helloworld;
+option go_package="./types";
+
+message NewOrderModifyLabelNo {
+  int32 time       = 1;
+  int32 userid     = 2;
+  int32 price_e4   = 4; // label number changed from 3 to 4
+  string desc      = 3; // label number changed from 4 to 3
+}

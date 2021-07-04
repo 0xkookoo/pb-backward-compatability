@@ -1,0 +1,11 @@
+// file: request.proto
+syntax = "proto3";
+package helloworld;
+option go_package="./types";
+
+message NewOrderModifyLabelTypeThree {
+  int32 time       = 1;
+  int32 userid     = 2;
+  int64 price_e8   = 3; // change label type of price from int32 to int64, field name from price_e4 to price_e8
+  string desc      = 4;
+}

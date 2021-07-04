@@ -1,0 +1,11 @@
+// file: request.proto
+syntax = "proto3";
+package helloworld;
+option go_package="./types";
+
+message OldOrder {
+  int32 time      = 1;
+  int32 userid    = 2;
+  int32 price_e4  = 3;
+  string desc     = 4;
+}
